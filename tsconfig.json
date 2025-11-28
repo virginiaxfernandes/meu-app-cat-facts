@@ -1,23 +1,14 @@
 {
   "compilerOptions": {
-    "target": "es2017",
-    "module": "commonjs",
-    "jsx": "react",
+    "target": "ESNext",
+    "module": "ESNext",
+    "jsx": "react-jsx",
     "strict": true,
-    "allowJs": true,
-    "noEmit": true,
-    "isolatedModules": true,
-    "esModuleInterop": true,
     "moduleResolution": "node",
+    "esModuleInterop": true,
     "skipLibCheck": true,
-    "resolveJsonModule": true,
-    "baseUrl": ".",
-    "paths": {
-      "@screens/*": ["src/screens/*"],
-      "@components/*": ["src/components/*"],
-      "@navigation/*": ["src/navigation/*"]
-    }
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true
   },
-  "include": ["src"],
   "exclude": ["node_modules"]
 }

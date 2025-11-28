@@ -1,25 +1,12 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
-import { Card, Text, Button, Icon } from 'react-native-paper';
+import { Appbar } from 'react-native-paper';
+import { DrawerActions } from '@react-navigation/native';
 
-export default function HomeScreen({ navigation }: any) {
+export default function Header({ title, navigation }: any) {
   return (
-    <View style={styles.container}>
-      <Card mode="elevated">
-        <Card.Title title="Home" left={(props) => <Icon source="home" {...props} />} />
-        <Card.Content>
-          <Text>Bem-vindo! Esta é a aba Home.</Text>
-        </Card.Content>
-        <Card.Actions>
-          <Button mode="contained" onPress={() => navigation.navigate('Detalhes', { from: 'Home' })}>
-            Ir para Detalhes
-          </Button>
-        </Card.Actions>
-      </Card>
-    </View>
+    <Appbar.Header mode="center-aligned">
+      <Appbar.Action icon="menu" onPress={() => navigation.dispatch(DrawerActions.toggleDrawer())} />
+      <Appbar.Content title={title} />
+    </Appbar.Header>
   );
 }
-
-const styles = StyleSheet.create({
-  container: { flex: 1, padding: 16, backgroundColor: '#FAFAFA', gap: 16 },
-});

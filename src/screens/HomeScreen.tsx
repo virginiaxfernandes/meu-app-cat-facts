@@ -6,24 +6,12 @@ export default function HomeScreen({ navigation }: any) {
   return (
     <View style={styles.container}>
       <Card mode="elevated">
-        <Card.Title
-          title="Home"
-          left={({ size, ...rest }) => (
-            <Icon source="home" size={24} {...rest} />
-          )}
-        />
-
+        <Card.Title title="Home" left={(props) => <Icon source="home" {...props} />} />
         <Card.Content>
           <Text>Bem-vindo! Esta é a aba Home.</Text>
         </Card.Content>
-
         <Card.Actions>
-          <Button
-            mode="contained"
-            onPress={() =>
-              navigation.navigate('Detalhes', { from: 'Home' })
-            }
-          >
+          <Button mode="contained" onPress={() => navigation.navigate('Detalhes', { from: 'Home' })}>
             Ir para Detalhes
           </Button>
         </Card.Actions>
@@ -33,11 +21,5 @@ export default function HomeScreen({ navigation }: any) {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 16,
-    backgroundColor: '#FAFAFA',
-    gap: 16,
-  },
+  container: { flex: 1, padding: 16, backgroundColor: '#FAFAFA', gap: 16 },
 });
-

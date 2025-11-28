@@ -1,28 +1,31 @@
 {
   "name": "meu-app-cat-facts",
   "version": "1.0.0",
-  "private": true,
+  "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "echo 'React Native não roda no Codespaces, mas o projeto está configurado corretamente.'",
-    "typecheck": "tsc --noEmit",
-    "lint": "echo 'Você pode adicionar ESLint depois.'"
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "react": "18.2.0",
-    "react-native": "0.71.8",
-    "react-native-paper": "^5.12.1",
-    "react-native-gesture-handler": "^2.14.0",
-    "react-native-reanimated": "^3.8.0",
-    "react-native-safe-area-context": "^4.10.0",
-    "react-native-screens": "^3.32.0",
-    "@react-navigation/native": "^6.1.15",
-    "@react-navigation/native-stack": "^6.9.23",
-    "@react-navigation/drawer": "^6.7.2",
-    "@react-navigation/bottom-tabs": "^6.5.20"
+    "expo": "~49.0.0",
+    "react": "19.2.0",
+    "react-native": "0.82.1",
+    "react-native-paper": "^5.14.5",
+    "@react-navigation/native": "^7.1.22",
+    "@react-navigation/native-stack": "^7.8.1",
+    "@react-navigation/drawer": "^7.7.5",
+    "@react-navigation/bottom-tabs": "^7.8.7",
+    "react-native-gesture-handler": "^2.29.1",
+    "react-native-reanimated": "^4.1.5",
+    "react-native-safe-area-context": "^5.6.2",
+    "react-native-screens": "^4.18.0"
   },
   "devDependencies": {
-    "typescript": "^5.4.0",
-    "@types/react": "^18.2.60",
+    "typescript": "^5.9.3",
+    "@types/react": "^19.2.7",
     "@types/react-native": "^0.73.0"
   }
 }
