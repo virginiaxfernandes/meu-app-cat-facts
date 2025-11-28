@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "meu-app-cat-facts",
+    "slug": "meu-app-cat-facts",
+    "version": "1.0.0",
+    "sdkVersion": "49.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "android": {
+      "package": "com.anonymous.meuappcatfacts"
+    },
+    "ios": {
+      "bundleIdentifier": "com.anonymous.meuappcatfacts"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "0bd4a225-ab1a-4752-b353-762c7c487684"
+      }
+    }
+  }
+}
