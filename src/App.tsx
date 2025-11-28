@@ -1,6 +1,6 @@
 import React from 'react';
-import { PaperProvider } from 'react-native-paper';
-import AppNavigator from './navigation/AppNavigator';
+import { Provider as PaperProvider } from 'react-native-paper';
+import AppNavigator from './navigation/AppNavigator.js';
 
 export default function App() {
   return (

@@ -3,7 +3,7 @@
     "name": "meu-app-cat-facts",
     "slug": "meu-app-cat-facts",
     "version": "1.0.0",
-    "sdkVersion": "49.0.0",
+    "sdkVersion": "54.0.0",
     "platforms": [
       "ios",
       "android",
