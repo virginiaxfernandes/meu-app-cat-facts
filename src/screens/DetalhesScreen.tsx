@@ -1,8 +1,17 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { Card, Text, Button, Icon } from 'react-native-paper';
+import { RouteProp } from '@react-navigation/native';
+import { DrawerNavigationProp } from '@react-navigation/drawer';
 
-export default function DetalhesScreen({ route, navigation }: any) {
+type DetalhesScreenRouteProp = RouteProp<any, 'Detalhes'>;
+
+interface DetalhesScreenProps {
+  route: DetalhesScreenRouteProp;
+  navigation: DrawerNavigationProp<any, any>;
+}
+
+export default function DetalhesScreen({ route, navigation }: DetalhesScreenProps) {
   const from = route?.params?.from ?? '—';
   const fact = route?.params?.fact ?? '';
 

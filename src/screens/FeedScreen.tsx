@@ -31,7 +31,7 @@ export default function FeedScreen({ navigation }: any) {
         </Card>
       ) : (
         facts.map((item, index) => (
-          <Card key={index} mode="elevated" style={{ marginBottom: 12 }}>
+          <Card key={item.id || index} mode="elevated" style={{ marginBottom: 12 }}> 
             <Card.Title title={`Fato #${index + 1}`} left={(props) => <Icon source="cat" {...props} />} />
             <Card.Content>
               <Text>{item.fact}</Text>
